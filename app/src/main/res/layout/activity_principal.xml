@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:clickable="false"
+    android:background="@drawable/ic_fondo2">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ff000000"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/bHablar"
+        android:onClick="hablar"
+        android:background="@drawable/micro"
+        android:layout_alignTop="@+id/bFr"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_marginRight="42dp" />
+
+    <Button
+        android:id="@+id/bFr"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/bIngles"
+        android:background="@drawable/ic_fr"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/bIngles"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/bIngles"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/bEspanol"
+        android:background="@drawable/ic_us"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/bEspanol"
+        android:nestedScrollingEnabled="false"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/bEspanol"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_es"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fillViewport="false"
+        android:layout_below="@+id/editText"
+        android:layout_toLeftOf="@+id/bHablar"
+        android:layout_above="@+id/bFr">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv"
+            android:background="#ff000000"
+            android:textColor="#ffffffff"
+            android:editable="false"
+            android:clickable="true" />
+    </ScrollView>
+
+</RelativeLayout>

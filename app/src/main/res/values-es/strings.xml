@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SintesisVoz</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btEs">Idioma cambiado a Español</string>
+    <string name="btUs">Idioma cambiado a Ingles</string>
+    <string name="btFr">Idioma cambiado a Frances</string>
+    <string name="habla">Habla ahora</string>
+</resources>

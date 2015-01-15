@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SintesisVoz</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btEs">Language changed to Spanish</string>
+    <string name="btUs">Language changed to English</string>
+    <string name="btFr">Language changed to French</string>
+    <string name="habla">Talk now</string>
+</resources>
+
